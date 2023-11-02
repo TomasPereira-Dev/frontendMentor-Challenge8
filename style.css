@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: "Fraunces", serif;
+}
+
+h1{
+    font-size: 3.5em;
+    font-weight: 900;
+    letter-spacing: .2em;
+}
+
+h2{
+    color: hsl(212, 17%, 19%);
+}
+
+p, a{
+    font-family: "Barlow", sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    height: 100%;
+    padding: 3em 2.5em 0 2.5em;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: hsl(0, 0%, 100%);
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-between;   
+}
+
+header > nav > img{
+    width: 200px;
+}
+
+header > nav > ul > li > a{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2em;
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+ul{
+    display: flex;
+    gap: .5em;
+}
+
+.contact-link{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    color: hsl(212, 27%, 19%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.intro-title-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 8em;
+}
+
+main{
+    font-size: 1.125em;
+}
+
+.information-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.information-section > picture {
+    height: 600px;
+}
+
+.info-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 5em;
+}
+
+.graphic-design-article, .photography-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+    padding-bottom: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+}
+
+.graphic-design-article > p, .photography-article > p{
+    max-width: 38ch;
+    text-align: center;
+}
+
+.graphic-design-article{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    color: hsl(167, 40%, 24%);
+}
+.graphic-design-article > h2 {
+    color: hsl(167, 40%, 24%);
+}
+
+.photography-article{
+    background-image: url("./images/desktop/image-photography.jpg");
+    color: hsl(198, 62%, 26%);
+}
+
+.photography-article > h2 {
+    color: hsl(198, 62%, 26%);
+} 
+
+.testimonials-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5.3em;
+    padding: 10em;
+}
+
+.testimonials-section > h2 {
+    align-self: center;
+    letter-spacing: .2em;
+}
+
+.testimonials-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+}
+
+.testimonial{
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.testimonial > p{
+    max-width: 100ch;
+} 
+
+.testimonial > img {
+    border-radius: 50%;
+    width: 72px;
+}
+
