@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    background-repeat: no-repeat;
 }
 
 html, body{
@@ -28,6 +29,17 @@ h2{
 
 p, a{
     font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+p{
+    color: hsl(213, 9%, 39%);
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 
 header{
@@ -37,7 +49,6 @@ header{
     height: 100%;
     padding: 3em 2.5em 0 2.5em;
     background-image: url("./images/desktop/image-header.jpg");
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: hsl(0, 0%, 100%);
@@ -90,16 +101,52 @@ main{
     
 }
 
-.information-section > picture {
-    height: 600px;
-}
-
 .info-article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
     padding: 5em;
+}
+
+.info-article > a{
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: hsl(212, 17%, 19%);
+    padding: 0 .4em;
+}
+
+.info-article > a::before{
+    position: absolute;
+    z-index: -1;
+    bottom: -2px;
+    right: 0.5px;
+    content:"";
+    width: 100%;
+    height: .5em;
+    border-radius: 5px;
+}
+
+.transform-article > a::before{
+    background-color: hsl(51, 99%, 90%);
+}
+
+.stand-out-article > a::before{
+    background-color: hsl(7, 99%, 90%);
+}
+
+.transform-article > h2, .stand-out-article > h2 {
+    max-width: 15ch;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+.transform-article > p, .stand-out-article > p{
+    max-width: 45ch;
+    line-height: 1.5em;
 }
 
 .graphic-design-article, .photography-article{
@@ -122,7 +169,7 @@ main{
     background-image: url("./images/desktop/image-graphic-design.jpg");
     color: hsl(167, 40%, 24%);
 }
-.graphic-design-article > h2 {
+.graphic-design-article > h2, .graphic-design-article > p {
     color: hsl(167, 40%, 24%);
 }
 
@@ -131,35 +178,43 @@ main{
     color: hsl(198, 62%, 26%);
 }
 
-.photography-article > h2 {
+.photography-article > h2, .photography-article > p{
     color: hsl(198, 62%, 26%);
 } 
 
 .testimonials-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5.3em;
-    padding: 10em;
+    padding: 10em 0;
 }
 
 .testimonials-section > h2 {
     align-self: center;
     letter-spacing: .2em;
+    font-weight: 900;
+    font-size: 1.3em;
+    color: hsl(210, 4%, 67%);
 }
 
 .testimonials-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3em;
+    column-gap: 2em;
 }
 
 .testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    line-height: 1.8em;
     text-align: center;
-    line-height: 1.5em;
 }
 
 .testimonial > p{
-    max-width: 100ch;
+    max-width: 34ch;
 } 
 
 .testimonial > img {
@@ -167,3 +222,40 @@ main{
     width: 72px;
 }
 
+.testimonial-name{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+
+.testimonial-job{
+    color: hsl(210, 4%, 67%);
+    font-size: .8em;
+}
+
+.gallery-section{
+    display: flex;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding: 4em 0;
+    background-color: hsl(167, 44%, 70%);
+}
+
+footer > nav > ul{
+    gap: 2.5em;
+}
+
+footer > nav > ul > li > a{
+    color: hsl(168, 34%, 41%);
+}
+
+.social-media-links-container{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
