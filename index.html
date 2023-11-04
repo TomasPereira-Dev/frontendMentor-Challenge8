@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./effects.css">
+  <link rel="stylesheet" href="./media-queries.css">
   <title>Sunnyside Agency</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
 
   <main>
     <section class="information-section">
-      <article class="transform-article info-article">
+      <article class="transform-article info-article cell-1">
         <h2>Transform your brand</h2>
         <p>
           We are a full-service creative agency specializing in helping brands grow fast. 
@@ -38,15 +39,15 @@
         </p>
         <a href="#">LEARN MORE</a>
       </article>
-      <picture>
+      <picture class="cell-2">
         <source srcset="./images/mobile/image-transform.jpg" media="(max-width: 425px)">
-        <img src="./images/desktop/image-transform.jpg" alt="an egg">
+        <img src="./images/desktop/image-transform.jpg" alt="an egg" media="(min-width: 768px)">
       </picture>
-      <picture>
+      <picture class="cell-3">
         <source srcset="./images/mobile/image-stand-out.jpg" media="(max-width: 425px)">
-        <img src="./images/desktop/image-stand-out.jpg" alt="a pink cup">
+        <img src="./images/desktop/image-stand-out.jpg" alt="a pink cup" media="(min-width: 768px)">
       </picture>
-      <article class="stand-out-article info-article">
+      <article class="stand-out-article info-article cell-4">
         <h2> Stand out to the right audience</h2>
         <p>
           Using a collaborative formula of designers, researchers, photographers, 
@@ -54,15 +55,14 @@
         </p>
         <a href="#">LEARN MORE</a>
       </article>
-
-      <article class="graphic-design-article info-article">
+      <article class="graphic-design-article info-article cell-5">
         <h2>Graphic design</h2>
         <p>
           Great design makes you memorable. We deliver artwork that underscores your brand message 
           and captures potential clients’ attention.
         </p>
       </article>
-      <article class="photography-article info-article">
+      <article class="photography-article info-article cell-6">
         <h2>Photography</h2>
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </article>

@@ -1,0 +1,89 @@
+@media(max-width: 425px){
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .intro-title-container > h1{
+        max-width: 15ch;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header > nav{
+        display: none;
+    }
+
+    .information-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .info-article{
+        padding: 3em 1em;
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-article > h2{
+        font-size: 1.8em;
+        max-width: 14ch;
+    }
+
+    .info-article > p{
+        font-size: .9em;
+        max-width: 32ch;
+    }
+
+    .cell-1{
+        grid-row-start: 2;
+    }
+
+
+    .graphic-design-article > p, .photography-article > p{
+        max-width: 45ch;
+    }
+
+    .graphic-design-article{
+        background-image: url("./images/mobile/image-graphic-design.jpg");
+    }
+
+    .photography-article{
+        background-image: url("./images/mobile/image-photography.jpg");
+    }
+
+    .testimonials-section > h2 {
+        font-size: 1em;
+    }
+
+    .testimonials-section{
+        gap: 3em;
+        padding: 3em 1em;
+    }
+
+    .testimonials-container{
+        grid-template-columns: 1fr;
+        row-gap: 3em;
+    }
+
+    .testimonial{
+        gap: 1.5em;
+    }
+
+    .testimonial > p{
+        font-size: .9em;
+        max-width: 32ch;
+    }
+
+    .gallery-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        padding-bottom: 6em;
+    }
+}
