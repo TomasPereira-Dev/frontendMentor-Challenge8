@@ -1,0 +1,20 @@
+.contact-link:hover{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    color: hsl(0, 0%, 100%);
+    transition: 150ms ease;
+}
+
+footer > nav > ul > a:hover, i:hover{
+    color: hsl(0, 0%, 100%);
+    transition: 150ms ease;
+}
+
+.transform-article > a:hover::before{
+    background-color: hsl(51, 100%, 49%);
+    transition: 100ms ease;
+}
+
+.stand-out-article > a:hover::before{
+    background-color: hsl(7, 99%, 70%);
+    transition: 100ms ease;
+}
